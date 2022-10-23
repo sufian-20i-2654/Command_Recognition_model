@@ -1,0 +1,206 @@
+<!--code taken for templates from:https://www.free-css.com/free-css-templates-->
+<!--code for recording taken from:https://www.geeksforgeeks.org/create-a-video-and-audio-recorder-with-javascript-mediarecorder-api/-->
+<!DOCTYPE html>
+<!--
+Template Name: Spourmo
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Voice Recording System</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay padtop" style="background-image:url('images/demo/backgrounds/01.png');"> 
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <header id="header" class="hoc clear">
+    <div id="logo" class="fl_left"> 
+      <!-- ################################################################################################ -->
+      <h1><a href="index.html">Voice Recording System</a></h1>
+      <!-- ################################################################################################ -->
+    </div>
+    <nav id="mainav" class="fl_right"> 
+      <!-- ################################################################################################ -->
+      <ul class="clear">
+        <li class="active"><a href="index.html">Home</a></li>
+      <!-- ################################################################################################ -->
+    </nav>
+  </header>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <article>
+      <h3 class="heading">Record your voice</h3>
+      <p>Kindly record your voice so that the process can take place.</p>
+      <footer>
+        <ul class="nospace inline pushright">
+          
+        </ul>
+      </footer>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+      </ul>
+    </section>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+
+
+<select id="media">
+  <option value="choose-an-option"> 
+      Choose an option
+  </option>
+  <option value="vid">Video</option>
+  <option value="aud">Audio</option>
+</select>
+
+<div class="display-none" id="vid-recorder">
+  <h3>Record Video </h3>
+  <video autoplay id="web-cam-container" 
+      style="background-color: black;">
+      Your browser doesn't support 
+      the video tag
+  </video>
+
+  <div class="recording" id="vid-record-status">
+      Click the "Start video Recording" 
+      button to start recording
+  </div>
+
+  <!-- This button will start the video recording -->
+  <button type="button" id="start-vid-recording" 
+      onclick="startRecording(this, 
+      document.getElementById('stop-vid-recording'))">
+      Start video recording
+  </button>
+
+  <!-- This button will stop the video recording -->
+  <button type="button" id="stop-vid-recording" 
+      disabled onclick="stopRecording(this, 
+      document.getElementById('start-vid-recording'))">
+      Stop video recording
+  </button>
+
+  <!--The video element will be created using 
+      JavaScript and contains recorded video-->
+  <!-- <video id="recorded-video"  controls>
+      Your browser doesn't support the video tag
+  </video> -->
+
+  <!-- The below link will let the
+       users download the recorded video -->
+  <!-- <a href="" > Download it! </a> -->
+</div>
+
+<div class="display-none" id="aud-recorder">
+  <h3> Record Audio</h3>
+
+  <div class="recording" id="aud-record-status">
+      Click the "Start Recording" 
+      button to start recording
+  </div>
+
+  <button type="button" id="start-aud-recording" 
+      onclick="startRecording(this, 
+      document.getElementById('stop-aud-recording'))">
+      Start recording 
+  </button>
+
+  <button type="button" id="stop-aud-recording" 
+      disabled onclick="stopRecording(this, 
+      document.getElementById('start-aud-recording'))">
+      Stop recording
+  </button>
+
+  <!-- The audio element will contain the 
+      recorded audio and will be created 
+      using Javascript -->
+  <!-- <audio id="recorded-audio" 
+      controls></audio> -->
+
+  <!-- The below link will let the users 
+       download the recorded audio -->
+  <!-- <a href="" > Download it! </a> -->
+</div>
+
+<script src="index.js"></script>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Bottom Background Image Wrapper -->
+
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row5">
+    <div id="copyright" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Bottom Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
